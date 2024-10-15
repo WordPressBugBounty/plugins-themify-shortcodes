@@ -8,7 +8,7 @@ class Themify_Shortcodes_TinyMCE {
 		if ( current_user_can( 'publish_posts' ) && get_user_option( 'rich_editing' ) == 'true' ) {
 			add_filter( 'mce_external_plugins', array( __CLASS__, 'add_plugin' ) );
 			add_filter( 'mce_buttons', array( __CLASS__, 'add_button' ) );
-			add_action( 'wp_enqueue_editor', array( __CLASS__, 'localize' ) );
+			add_filter( 'init', array( __CLASS__, 'localize' ) );
 			add_action( 'print_media_templates', array( __CLASS__, 'print_media_templates' ) );
 		}
 	}
@@ -65,7 +65,7 @@ class Themify_Shortcodes_TinyMCE {
 	 * @since 2.7.6
 	 */
 	public static function print_media_templates( $shortcodes = null ) {
-		if ( $shortcodes == null ) {
+        if ( $shortcodes == null ) {
 			$shortcodes = self::get_shortcodes();
 		}
 		foreach ( $shortcodes as $key => $shortcode ) {
