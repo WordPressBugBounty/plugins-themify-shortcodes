@@ -2,7 +2,7 @@
 /*
 Plugin Name:  Themify Shortcodes
 Plugin URI:   https://wordpress.org/plugins/themify-shortcodes/
-Version:      2.1.3 
+Version:      2.1.4
 Author:       Themify
 Author URI:   https://themify.me
 Description:  A set of Themify shortcodes that can be used with any theme.
@@ -28,7 +28,7 @@ function themify_shortcodes_setup() {
 	    define( 'THEMIFY_SHORTCODES_URI', trailingslashit( plugin_dir_url( __FILE__ ) ) );
 	}
 	if( ! defined( 'THEMIFY_SHORTCODES_VERSION' ) ) {
-	    define( 'THEMIFY_SHORTCODES_VERSION', '2.1.3' );
+	    define( 'THEMIFY_SHORTCODES_VERSION', '2.1.4' );
 	}
 
 	include THEMIFY_SHORTCODES_DIR . 'includes/system.php';

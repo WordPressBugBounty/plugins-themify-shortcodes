@@ -712,7 +712,7 @@ function themify_shortcode_icon( $atts = array(), $content = null ) {
 			$atts['icon'] = themify_get_icon( $atts['icon'] );
 			$out .= '<i class="themify-icon-icon" ' . $style_attr . '>'.$atts['icon'].'</i>';
 		} else {
-
+            $atts['icon'] = esc_attr( $atts['icon'] );
 			if ( strpos( $atts['icon'], 'ti-' ) === 0 ) {
 				$prefix = '';
 				wp_enqueue_style( 'themify-icons' );

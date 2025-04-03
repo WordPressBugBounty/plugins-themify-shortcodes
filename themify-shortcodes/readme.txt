@@ -3,8 +3,8 @@ Contributors: themifyme
 Plugin Name: Themify Shortcodes
 Tags: shortcode, themify
 Requires at least: 4.0
-Tested up to: 6.6
-Stable tag: 2.1.3
+Tested up to: 6.7.2
+Stable tag: 2.1.4
 License: GPL v2
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
